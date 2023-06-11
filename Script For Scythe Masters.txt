@@ -1,0 +1,41 @@
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local window = kavoUi.CreateLib("Scythe Master","Midnight")
+
+---Tabs
+ 
+local Tab1 = window:NewTab("Main")
+local Tab1Section = Tab1:NewSection("Free Roblox Scripts")
+local Tab2 = window:NewTab("Sup")
+local Tab2Section = Tab2:NewSection("Sup is word")
+local Tab1Section = Tab1:NewSection("Made By biel17125")
+local Tab1Section = Tab1:NewSection("freerobloxscripts.com")
+ 
+---Buttons
+
+Tab1Section:NewToggle("Auto Train", "gain strength automatically", function(state)
+    if state then
+_G.t = true
+while _G.t == true do
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SkoterScripts/Scythe-Masters-Script/main/Script%20For%20Every%20Second%20You%20Get%20%2B1%20Size.txt"))()
+end
+     else
+_G.t = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SkoterScripts/Scythe-Masters-Script/main/Script%20For%20Every%20Second%20You%20Get%20%2B1%20Size.txt"))()
+end
+end)
+
+Tab1Section:NewToggle("Auto Coin", "gain strength automatically", function(state)
+    if state then
+_G.c = true
+while _G.c == true do
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SkoterScripts/Scythe-Masters-Script/main/Script%20For%20Scythe%20Master.txt"))()
+wait(11)
+end
+     else
+_G.c = false
+end
+end)
+
+Tab2Section:NewButton("Keyboard","Pc Like Keyboard",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+end)
